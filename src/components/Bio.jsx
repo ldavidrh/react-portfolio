@@ -9,6 +9,7 @@ function Bio() {
           <a
             href="https://www.univalle.edu.co/"
             target="_blank"
+            rel="noopener noreferrer"
             className="hover:text-fiery-rose transition-all ease-in"
           >
             Universidad del Valle
@@ -16,7 +17,7 @@ function Bio() {
         </p>
       </div>
       <div>
-          <BioCanvas></BioCanvas>
+        <BioCanvas></BioCanvas>
       </div>
     </div>
   );
