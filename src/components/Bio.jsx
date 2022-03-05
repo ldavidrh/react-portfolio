@@ -1,4 +1,3 @@
-import BioCanvas from "./BioCanvas";
 function Bio() {
   return (
     <div className="flex justify-evenly items-center bg-jet h-screen w-screen">
