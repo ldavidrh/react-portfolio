@@ -15,9 +15,6 @@ function Bio() {
           </a>
         </p>
       </div>
-      <div>
-        <BioCanvas></BioCanvas>
-      </div>
     </div>
   );
 }
