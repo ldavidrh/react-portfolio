@@ -2,3 +2,159 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: theme("colors.black");
+  margin: 0;
+  overflow: hidden;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 4rem;
+}
+
+@layer components {
+  .content {
+    @apply w-screen h-screen px-10 py-5 text-platinum;
+  }
+
+  .nav-link {
+    @apply hover:text-orange-web transition-all text-2xl;
+  }
+
+  .media-container {
+    @apply flex w-full flex-col relative bottom-0 items-center text-2xl flex-1 justify-center gap-5;
+  }
+
+  .media-link {
+    @apply hover:text-orange-web hover:scale-150 transition-all;
+  }
+}
+
+.sidebar-tooltip {
+  /* @apply absolute left-16 w-max h-auto text-center bg-platinum border-8 text-oxford-blue px-1 py-2 */
+  position: absolute;
+  left: 60px;
+  width: max-content;
+  height: auto;
+  text-align: center;
+  background-color: antiquewhite;
+  border-radius: 7px;
+  color: theme("colors.oxford-blue");
+  padding: 4px 7px 4px 7px;
+  transform-origin: left;
+  transform: scale(0);
+  transition: transform 150ms ease-in;
+  font-weight: 600;
+}
+
+.sidebar-link:hover .sidebar-tooltip {
+  transform: scale(1);
+}
+
+/* .tooltip::after {
+  content: "";
+  color: theme("colors.black");
+  width: 80px;
+  height: 30px;
+  background-color: theme("colors.platinum");
+  position: absolute;
+  left: 60px;
+  border-radius: 7px;
+  transform: scale(0);
+  transform-origin: left;
+  transition: transform 150ms ease-in-out;
+}
+
+.tooltip:hover::after {
+  transform: scale(1);
+} */
+
+.nav {
+  @apply flex flex-col items-center justify-around w-full flex-1;
+}
+
+.links {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 200ms ease-in;
+}
+
+/* .link {
+  position: relative;
+  text-decoration: none;
+  color: theme("colors.fiery-rose");
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.biopic {
+  @apply relative h-auto w-1/4 rounded-full min-w-[300px];
+  transition: all 200ms ease-in;
+}
+
+.biopic:hover {
+  transform: scale(1.1);
+  border: 3px solid theme("colors.fiery-rose");
+  outline: 3px solid theme("colors.middle-blue-green");
+  border-radius: 50%;
+}
+
+#bio {
+  background-image: url("assets/low-poly-grid-haikei.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+
+.biopic::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  transform: scale(0.5);
+  transition: transform 300ms ease-in;
+  background-color: theme("colors.middle-blue-green");
+}
+
+.biopic:hover::before {
+  transform: scale(2.2);
+}
+
+.biopic::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  transform: scale(0.5);
+  transition: transform 300ms ease-in;
+  background-color: theme("colors.fiery-rose");
+}
+
+.biopic:hover::after {
+  transform: scale(5);
+} */

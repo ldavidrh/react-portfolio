@@ -3,11 +3,11 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
-      "lavender-blush": "#f6e8eaff",
-      "fiery-rose": "#ef626cff",
-      "raisin-black": "#22181cff",
-      jet: "#312f2fff",
-      "middle-blue-green": "#84dccfff",
+      black: "#000000ff",
+      "oxford-blue": "#14213dff",
+      "orange-web": "#fca311ff",
+      platinum: "#e5e5e5ff",
+      white: "#ffffffff",
     },
   },
   plugins: [],
