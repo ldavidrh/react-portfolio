@@ -28,9 +28,9 @@ const Sidebar = () => {
 
       <div className="h-full flex flex-col">
         <nav className="nav">
-          <Navlink text={"Home"} icon={faHome}></Navlink>
-          <Navlink text={"About me"} icon={faUser}></Navlink>
-          <Navlink text={"Contact me"} icon={faEnvelope}></Navlink>
+          <Navlink text={"Home"} icon={faHome} to={"/"}></Navlink>
+          <Navlink text={"About me"} icon={faUser} to={"about/"}></Navlink>
+          <Navlink text={"Contact me"} icon={faEnvelope} to={"contact/"}></Navlink>
         </nav>
         <div className="media-container">
           <a
